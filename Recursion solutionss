@@ -9,6 +9,7 @@ public static void printntoone(int n)
    System.out.println(n);
    printntoone(n-1);
 }
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ANS:2--
 You are given an integer N. Print numbers from 1 to N without the help of loops.
 public static void printntoone(int n)
@@ -21,6 +22,7 @@ public static void printntoone(int n)
    System.out.println(n);
   
 }
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ANS:3--
 Given a number and its reverse. Find that number raised to the power of its own reverse..
    class Solution
@@ -51,6 +53,7 @@ Given a number and its reverse. Find that number raised to the power of its own 
     }
 
 }
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 ANS:4--
 Write a recursive function to print the reverse of a given string...
 public class Removzero
@@ -71,6 +74,7 @@ public class Removzero
         revsrsestr(str,i);
     }
 }
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 ANS:5--
 Given a positive integer, N. Find the factorial of N..
 class Solution{
@@ -88,3 +92,29 @@ class Solution{
         System.out.println(factorial(5));
     }
 }
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+ANS:6--
+Given an integer array Arr[] of size N. The task is to find sum of it...
+
+class Solution {
+   public static int sum(int arr[], int n) {
+        // code here
+        if(n<=0)
+        {
+            return 0;
+        }
+       
+       return (sum(arr,n-1)+arr[n-1]);
+
+    }
+    public static void main(String args[])
+    {
+        int arr[]={1,2,3,4};
+        int n=arr.length;
+       System.out.println(sum(arr,n));
+       
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+ANS:7--
+
