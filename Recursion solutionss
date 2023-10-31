@@ -1,0 +1,25 @@
+ANS:1--
+You are given an integer N. Print numbers from N to 1 without the help of loops.
+public static void printntoone(int n)
+{
+   if(n==0)
+   {
+     return;
+   }
+   System.out.println(n);
+   printntoone(n-1);
+}
+ANS:2--
+You are given an integer N. Print numbers from 1 to N without the help of loops.
+public static void printntoone(int n)
+{
+   if(n==0)
+   {
+     return;
+   }
+    printntoone(n-1);
+   System.out.println(n);
+  
+}
+ANS:3--
+
